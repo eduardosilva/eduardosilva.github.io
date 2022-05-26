@@ -29,6 +29,7 @@ layout: default
           {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
           </h1>{% endif %}
+          {% if page.subtitle %}<h2 style="margin-top:0;margin-bottom:-25px;  font-weight: 400; font-style: normal; font-size: 22px;">{{page.subtitle}}</h2>{% endif %}
           {% include page__meta.html %}
         </header>
       {% endunless %}
